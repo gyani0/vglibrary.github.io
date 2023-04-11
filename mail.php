@@ -25,7 +25,7 @@
         ?>
         <script language="javascript" type="text/javascript">
             alert('Thank you for the order. We will contact you shortly');
-            window.location = "index.html";
+            window.location = 'index.html';
             </script>
             <?php
     }
