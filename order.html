@@ -107,37 +107,45 @@
             <div class="row g-0">
                 <div class="col-lg-7">
                     <div class="bg-primary h-100 p-5">
+                        <form method="POST" action="mail.php">
                         <div class="row g-3">
                             <div class="col-12 col-sm-6">
-                                <input type="text" class="form-control bg-white border-0" placeholder="Your Name" style="height: 55px;">
+                                <input type="text" name="name" class="form-control bg-white border-0" placeholder="Your Name"
+                                    style="height: 55px;">
                             </div>
                             <div class="col-12 col-sm-6">
-                                <input type="email" class="form-control bg-white border-0" placeholder="Your Email" style="height: 55px;">
+                                <input type="email" name="email" class="form-control bg-white border-0" placeholder="Your Email"
+                                    style="height: 55px;">
                             </div>
-                            
-                          
-                               
+
+
+
                             <div class="col-12">
-                                <input type="text" class="form-control bg-white border-0" placeholder="PHONE NO." style="height: 55px;">
-                            </div>
-                            <div class="col-12">
-                                <input type="text" class="form-control bg-white border-0" placeholder="ORDER ID" style="height: 55px;">
-                            </div>
-            
-                             <!--<LABEL class="form-control bg-white border-0" FOR="GENDER">GENDER</LABEL>-->
-                                <select id="GENDER">
-                                    <OPTION VALUE="GENDER">Book Name</OPTION>
-                                    <option value="MALE">C Programming</option>
-                                    <option value="FEMALE">Python</option>
-                                    <option value="FEMALE">Database</option>
-                                    <option value="FEMALE">Algorithm</option>
-                                    <option value="FEMALE">DSA</option>
-                                    </select>
-                            <div class="col-12">
-                            <input tpye="text" class="form-control bg-white border-0"  placeholder="UPI Ref No.">
+                                <input type="number" name="phone" class="form-control bg-white border-0" placeholder="PHONE NO."
+                                    style="height: 55px;">
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-secondary w-100 py-3" onclick="ALERT('THANK YOU')" type="submit">SUBMIT</button>
+                                <input type="text" name="orderid" class="form-control bg-white border-0" placeholder="ORDER ID"
+                                    style="height: 55px;">
+                            </div>
+
+                            <!--<LABEL class="form-control bg-white border-0" FOR="GENDER">GENDER</LABEL>-->
+                            <select id="GENDER" name="book">
+                                <OPTION VALUE="GENDER">Book Name</OPTION>
+                                <option value="MALE">C Programming</option>
+                                <option value="FEMALE">Python</option>
+                                <option value="FEMALE">Database</option>
+                                <option value="FEMALE">Algorithm</option>
+                                <option value="FEMALE">DSA</option>
+                            </select>
+
+
+                            <input tpye="text" name="upino" class="form-control bg-white border-0" placeholder="UPI Ref No.">
+
+
+                            <div class="col-12">
+                                <button class="btn btn-secondary w-100 py-3" onclick="ALERT('THANK YOU')"
+                                    type="submit">SUBMIT</button>
                             </div>
                         </div>
                     </form>
