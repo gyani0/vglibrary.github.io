@@ -1,10 +1,10 @@
 <?php 
         $field_name = $_POST['name'];
-        $field_email = $_post['email'];
-        $field_phone = $_post['phone'];
-        $field_orderid = $_post['orderid'];
-        $field_book = $_post['book'];
-        $field_upino = $_post['upino'];
+        $field_email = $_POST['email'];
+        $field_phone = $_POST['phone'];
+        $field_orderid = $_POST['orderid'];
+        $field_book = $_POST['book'];
+        $field_upino = $_POST['upino'];
     
     $mail_to = 'vaibhavvglibrary@gmail.com';
     $subject = 'Message from book buyer'.$field_name;
