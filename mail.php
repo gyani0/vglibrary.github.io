@@ -2,9 +2,9 @@
         $field_name = $_POST['name'];
         $field_email = $_post['email'];
         $field_phone = $_post['phone'];
-        $field_order = $_post['orderid'];
+        $field_orderid = $_post['orderid'];
         $field_book = $_post['book'];
-        $field_upi = $_post['upi'];
+        $field_upino = $_post['upino'];
     
     $mail_to = 'vaibhavvglibrary@gmail.com';
     $subject = 'Message from book buyer'.$field_name;
@@ -12,9 +12,9 @@
     $body_message = 'From:-'.$field_name."\n";
     $body_message = 'Email:-'.$field_email."\n";
     $body_message = 'Phone:-'.$field_phone."\n";
-    $body_message = 'Order id:-'.$field_order."\n";
+    $body_message = 'Order id:-'.$field_orderid."\n";
     $body_message = 'Book:-'.$field_book."\n";
-    $body_message = 'Upi Id:-'.$field_upi;
+    $body_message = 'Upi Id:-'.$field_upino;
 
     $headers = 'From: '.$field_email."\r\n";
     $headers = 'Reply-To:'.$field_email."\r\n";
